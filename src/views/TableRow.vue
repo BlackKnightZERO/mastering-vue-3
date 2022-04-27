@@ -1,16 +1,17 @@
 <template>
     <tr v-for="(row, index) in data" :key="index">
         <td data-label="index">{{ ++index }}</td>
-        <td data-label="Account">Visa - 3412</td>
-        <td data-label="Due Date">04/01/2016</td>
-        <td data-label="Amount">$1,190</td>
-        <td data-label="Period">03/01/2016 - 03/31/2016</td>
+        <td data-label="Account">{{ row.account }}</td>
+        <td data-label="Due Date">{{ row.due_date }}</td>
+        <td data-label="Amount">{{ row.amount }}</td>
+        <td data-label="Period">{{ row.period }}</td>
     </tr>
 </template>
 
 <script>
 import { ref, defineComponent } from "vue";
 import axios from 'axios'
+import { useFetch } from '@/compositionAPI/useFetch.js'
 
 export default defineComponent({
     async setup() {
