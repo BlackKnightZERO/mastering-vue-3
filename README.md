@@ -1,4 +1,4 @@
-# composition-usefetch-usecachefetch
+# mastering-vue-3
 
 ## Project setup
 ```

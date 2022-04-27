@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <h1>Counter works everywhere</h1>
-    <h2 :style="{ color: store.state.colorCode }">{{
+    <h2 
+      :style="{ color: store.state.colorCode }"
+    >{{
       store.state.counter
       }}</h2>
   </div>
