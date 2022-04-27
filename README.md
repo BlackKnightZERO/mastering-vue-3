@@ -1,4 +1,4 @@
-# mastering-vue-3
+# mastering-vue-3-App
 
 ## Project setup
 ```

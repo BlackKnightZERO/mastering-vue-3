@@ -37,5 +37,7 @@ export const useFetch = (url, config = {}) => {
 
 
 export const useFetchCache = (key, url, config) => {
+    const info = useFetch(url, { skip: true, ...config})
 
+    
 }
