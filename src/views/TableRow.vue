@@ -11,13 +11,12 @@
 <script>
 import { ref, defineComponent } from "vue";
 import axios from 'axios'
-import { useFetch } from '@/compositionAPI/useFetch.js'
+// import { useFetch } from '@/compositionAPI/useFetch.js'
 
 export default defineComponent({
     async setup() {
         const data = ref(null)
-
-        const url = 'http://localhost:3000/data'
+        const url = `http://localhost:3000/statement`
         await axios.get(url)
         .then(function (response) {
             console.log(response.data);
@@ -28,7 +27,7 @@ export default defineComponent({
         })
 
         return { data }             
-    }
+    },
 })
 </script>
 

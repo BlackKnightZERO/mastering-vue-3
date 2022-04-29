@@ -1,6 +1,6 @@
 <template>
     <div class="table">
-        <h1>Table Data with useFetch</h1>
+        <h1>Table Data with Axios</h1>
         <h2>{{ result }}</h2>
 
         <table>

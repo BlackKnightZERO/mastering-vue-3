@@ -1,7 +1,13 @@
 {
-  "data" : [
+  "statement" : [
     { "id": 1, "account": "Visa - 3412", "due_date": "04/01/2016", "amount": "$1,190", "period": "03/01/2016 - 03/31/2016" },
     { "id": 2, "account": "Corporate AMEX", "due_date": "03/01/2016", "amount": "$1,181", "period": "02/01/2016 - 02/29/2016" },
     { "id": 2, "account": "Visa - 3412", "due_date": "02/01/2016", "amount": "$842", "period": "01/01/2016 - 01/31/2016" }
+  ],
+  "product" : [
+    { "id": 1, "name": "Smart phone", "category" : "Electronics", "price": "$259" },
+    { "id": 2, "name": "Headphone", "category" : "Electronics", "price": "$100" },
+    { "id": 3, "name": "Mouse", "category" : "Hardware", "price": "$50" },
+    { "id": 4, "name": "DSLR", "category" : "Camera", "price": "$699" }
   ]
 }
