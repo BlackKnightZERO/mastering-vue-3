@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Table from '../views/Table.vue'
 import List from '../views/List.vue'
+import TemplateSyntax from '../views/Docs/TemplateSyntax.vue'
 
 const routes = [
   {
@@ -26,7 +27,13 @@ const routes = [
     path: '/list',
     name: 'List',
     component: List
-  }
+  },
+  // Docs
+  {
+    path: '/template-syntax',
+    name: 'TemplateSyntax',
+    component: TemplateSyntax
+  },
 ]
 
 const router = createRouter({

@@ -1,11 +1,16 @@
 <template>
-    <tr v-for="(row, index) in data" :key="index">
-        <td data-label="index">{{ ++index }}</td>
-        <td data-label="Account">{{ row.account }}</td>
-        <td data-label="Due Date">{{ row.due_date }}</td>
-        <td data-label="Amount">{{ row.amount }}</td>
-        <td data-label="Period">{{ row.period }}</td>
-    </tr>
+    <template v-if="requestError">
+      <tr><td colspan="5">{{ requestError }}</td></tr>
+    </template>
+    <template v-else>
+      <tr v-for="(row, index) in data" :key="index">
+          <td data-label="index">{{ ++index }}</td>
+          <td data-label="Account">{{ row.account }}</td>
+          <td data-label="Due Date">{{ row.due_date }}</td>
+          <td data-label="Amount">{{ row.amount }}</td>
+          <td data-label="Period">{{ row.period }}</td>
+      </tr>
+    </template>
 </template>
 
 <script>
@@ -16,17 +21,25 @@ import axios from 'axios'
 export default defineComponent({
     async setup() {
         const data = ref(null)
+        const requestError = ref(null)
+
         const url = `http://localhost:3000/statement`
+
         await axios.get(url)
         .then(function (response) {
-            console.log(response.data);
             data.value = response.data
         })
         .catch(function (error) {
-            console.log(error);
+              if (error.response) {
+                requestError.value = error.message
+              } else if (error.request) {
+                requestError.value = error.message
+              } else {
+                requestError.value = error.message
+              }
         })
 
-        return { data }             
+        return { data, requestError }             
     },
 })
 </script>

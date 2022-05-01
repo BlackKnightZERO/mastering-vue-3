@@ -38,7 +38,7 @@ export default {
         TableRow
     },
     setup() {
-              
+
     },
 }
 </script>
