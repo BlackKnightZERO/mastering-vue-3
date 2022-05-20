@@ -16,7 +16,6 @@
 <script>
 import { ref, defineComponent } from "vue";
 import axios from 'axios'
-// import { useFetch } from '@/compositionAPI/useFetch.js'
 
 export default defineComponent({
     async setup() {

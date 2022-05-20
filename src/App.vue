@@ -1,52 +1,20 @@
 <template>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/table">Table</router-link> |
-    <router-link to="/list">List</router-link> |
-  </div> -->
-  <div class="navbar">
-
-      <div class="dropdown">
-          <button class="dropbtn">Doc
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <router-link to="/template-syntax">Template Syntax</router-link>
-          </div>
-      </div> 
-
-      <div class="dropdown">
-          <button class="dropbtn">YT Tutorials
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <router-link to="/">Home(Composition API)</router-link>
-            <router-link to="/about">About(Composition API)</router-link>
-            <router-link to="/table">Table(Suspense)</router-link>
-          </div>
-      </div> 
-
-      <div class="dropdown">
-          <button class="dropbtn">VueUse 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <router-link to="/list">List(useFetch)</router-link>
-          </div>
-      </div> 
-
-  </div>
+  <Nav />
+  <img alt="Vue logo" src="@/assets/logo.png" width="100" height="100">
   <router-view/>
 </template>
 
 <script>
 import { provide } from 'vue'
-import store from '@/store'
+import store from '@/store/customStore'
+import Nav from '@/components/Nav'
 
 export default {
   setup() {
     provide('store', store)
+  },
+  components: {
+    Nav
   }
 }
 </script>

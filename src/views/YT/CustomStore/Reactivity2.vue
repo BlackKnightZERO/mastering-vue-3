@@ -6,6 +6,10 @@
     >{{
       store.state.counter
       }}</h2>
+
+      <br>
+    <br>
+    <router-link to="/yt/reactivity-1">CustomStore & Reactivity 1</router-link>
   </div>
 </template>
 

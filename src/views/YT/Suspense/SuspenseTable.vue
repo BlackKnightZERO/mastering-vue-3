@@ -20,7 +20,7 @@
                     <div style="text-align:center">loading...</div>
                 </template>
 
-                    <TableRow />
+                    <SuspenseTableRow />
 
                 </Suspense>
             </tbody>
@@ -30,12 +30,12 @@
 </template>
 
 <script>
-import TableRow from './TableRow.vue'
+import SuspenseTableRow from './SuspenseTableRow.vue'
 
 export default {
     name: "Table",
     components: {
-        TableRow
+        SuspenseTableRow
     },
     setup() {
 

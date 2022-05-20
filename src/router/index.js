@@ -1,8 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Table from '../views/Table.vue'
-import List from '../views/List.vue'
+
 import TemplateSyntax from '../views/Docs/TemplateSyntax.vue'
+
+//yt
+import Reactivity1 from '../views/YT/CustomStore/Reactivity1.vue'
+import Reactivity2 from '../views/YT/CustomStore/Reactivity2.vue'
+import SuspenseTable from '../views/YT/Suspense/SuspenseTable'
+
+//vueuse
+import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
 
 const routes = [
   {
@@ -10,29 +17,33 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path: '/table',
-    name: 'Table',
-    component: Table
-  },
-  {
-    path: '/list',
-    name: 'List',
-    component: List
-  },
   // Docs
   {
     path: '/template-syntax',
     name: 'TemplateSyntax',
     component: TemplateSyntax
+  },
+  // YT
+  {
+    path: '/yt/reactivity-1',
+    name: 'Reactivity1',
+    component: Reactivity1
+  },
+  {
+    path: '/yt/reactivity-2',
+    name: 'Reactivity2',
+    component: Reactivity2
+  },
+  {
+    path: '/yt/suspense-table',
+    name: 'SuspenseTable',
+    component: SuspenseTable
+  },
+  // VueUse
+  {
+    path: '/vue-use/list-use-fetch-1',
+    name: 'ListUseFetch1',
+    component: ListUseFetch1
   },
 ]
 
