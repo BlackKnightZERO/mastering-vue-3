@@ -17,6 +17,7 @@
           <div class="dropdown-content">
             <router-link to="/yt/reactivity-1">CustomStore & Reactivity</router-link>
             <router-link to="/yt/suspense-table">Suspense & axios</router-link>
+            <router-link to="/yt/provide-inject">Provide & Inject</router-link>
           </div>
       </div> 
 
