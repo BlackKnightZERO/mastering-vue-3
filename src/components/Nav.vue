@@ -20,6 +20,7 @@
             <router-link to="/yt/suspense-table">Suspense & axios</router-link>
             <router-link to="/yt/provide-inject">Provide & Inject</router-link>
             <router-link to="/yt/slots-image">Slots Image</router-link>
+            <router-link to="/yt/carousel">Carousel Slider</router-link>
           </div>
       </div> 
 

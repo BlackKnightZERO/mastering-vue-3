@@ -10,6 +10,7 @@ import Reactivity2 from '../views/YT/CustomStore/Reactivity2.vue'
 import SuspenseTable from '../views/YT/Suspense/SuspenseTable'
 import SettingsProvider from '../views/YT/ProvideInject/SettingsProvider'
 import SlotContainer from '../views/YT/Slots/SlotContainer'
+import CarouselContainer from '../views/YT/Carousel/CarouselContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
@@ -58,6 +59,11 @@ const routes = [
     path: '/yt/slots-image',
     name: 'SlotContainer',
     component: SlotContainer
+  },
+  {
+    path: '/yt/carousel',
+    name: 'CarouselContainer',
+    component: CarouselContainer
   },
 
   // VueUse
