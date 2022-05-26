@@ -7,6 +7,7 @@
           </button>
           <div class="dropdown-content">
             <router-link to="/template-syntax">Template Syntax</router-link>
+            <!-- <router-link to="/suspense-combining-with-other-components">Suspense & Combine</router-link> -->
           </div>
       </div> 
 
@@ -18,6 +19,7 @@
             <router-link to="/yt/reactivity-1">CustomStore & Reactivity</router-link>
             <router-link to="/yt/suspense-table">Suspense & axios</router-link>
             <router-link to="/yt/provide-inject">Provide & Inject</router-link>
+            <router-link to="/yt/slots-image">Slots Image</router-link>
           </div>
       </div> 
 

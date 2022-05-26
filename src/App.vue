@@ -1,6 +1,8 @@
 <template>
   <Nav />
-  <img alt="Vue logo" src="@/assets/logo.png" width="100" height="100">
+    <router-link to="/">
+      <img alt="Vue logo" src="@/assets/logo.png" width="100" height="100">
+    </router-link>
   <router-view/>
 </template>
 
