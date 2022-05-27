@@ -16,7 +16,12 @@
       </div>
 
       <div class="nav-btn-wrapper" v-show="props.navButtons">
-        <div class="nav-btn" :class="{ active: index === currentSlide}" v-for="(btn, index) in props.imgCount" :key="index" @click="goToSlide(index)"></div>
+        <div
+          class="nav-btn"
+          :class="{ active: index === currentSlide}"
+          v-for="(btn, index) in props.imgCount"
+          :key="index"
+          @click="goToSlide(index)"></div>
       </div>
 
   </div>
