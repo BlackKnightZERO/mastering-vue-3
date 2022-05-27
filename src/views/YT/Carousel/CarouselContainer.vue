@@ -1,12 +1,20 @@
 <template>
   <div class="container">
-      <Carousel class="carousel">
-          <Slide>
-              <div>
-                  {{ imgCollection[0] }}
+
+      <Carousel class="carousel" v-slot="{ currentSlide }" :imgCount="imgCollection.length" autoPlay :interval="interval">
+
+          <Slide v-for="(slide, index) in imgCollection" :key="index">
+
+              <div v-show="currentSlide === index" class="slide-info">
+
+                  <img :src="require(`../../../assets/img/bg/${slide}`)" alt="">
+
               </div>
+
           </Slide>
+
       </Carousel>
+
   </div>
 </template>
 
@@ -22,12 +30,28 @@ const imgCollection = [
     'bg-5.jpg',
 ]
 
+const interval = 5000
+
 </script>
 
 <style scoped>
 .carousel{ 
+    position:relative;
     max-height: 60vh;
     height: 60vh;
     background: #fafafa;
+}
+.slide-info{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+img{
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>

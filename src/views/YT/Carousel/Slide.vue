@@ -12,6 +12,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 0.7s ease;
+}
 
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+}
 </style>
