@@ -1,7 +1,14 @@
 <template>
   <div class="container">
 
-      <Carousel class="carousel" v-slot="{ currentSlide }" :imgCount="imgCollection.length" autoPlay :interval="interval">
+      <Carousel
+        class="carousel"
+        v-slot="{ currentSlide }"
+        :imgCount="imgCollection.length"
+        nav
+        navButtons
+        autoPlay
+        :interval="interval">
 
           <Slide v-for="(slide, index) in imgCollection" :key="index">
 

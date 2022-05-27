@@ -3,7 +3,7 @@
       
       <slot :currentSlide="currentSlide" />
       
-      <div class="navigate">
+      <div class="navigate" v-show="props.nav">
 
         <div class="toggle-page left" @click="changeSlide('<')">
           <i class="fa fa-chevron-left"></i>
@@ -15,7 +15,7 @@
 
       </div>
 
-      <div class="nav-btn-wrapper">
+      <div class="nav-btn-wrapper" v-show="props.navButtons">
         <div class="nav-btn" :class="{ active: index === currentSlide}" v-for="(btn, index) in props.imgCount" :key="index" @click="goToSlide(index)"></div>
       </div>
 
@@ -28,7 +28,9 @@ import { ref, onUpdated, onMounted } from 'vue'
 const props = defineProps({
   imgCount: Number,
   autoPlay: Boolean,
-  interval:Number
+  interval:Number,
+  nav: Boolean,
+  navButtons: Boolean
 })
 
 const currentSlide = ref(0)

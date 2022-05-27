@@ -21,6 +21,7 @@
             <router-link to="/yt/provide-inject">Provide & Inject</router-link>
             <router-link to="/yt/slots-image">Slots Image</router-link>
             <router-link to="/yt/carousel">Carousel Slider</router-link>
+            <router-link to="/yt/skeleton-loader">Skeleton Loader</router-link>
           </div>
       </div> 
 

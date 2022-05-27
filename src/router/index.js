@@ -11,6 +11,7 @@ import SuspenseTable from '../views/YT/Suspense/SuspenseTable'
 import SettingsProvider from '../views/YT/ProvideInject/SettingsProvider'
 import SlotContainer from '../views/YT/Slots/SlotContainer'
 import CarouselContainer from '../views/YT/Carousel/CarouselContainer'
+import SkeletonLoaderContainer from '../views/YT/SkeletonLoader/SkeletonLoaderContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
@@ -64,6 +65,11 @@ const routes = [
     path: '/yt/carousel',
     name: 'CarouselContainer',
     component: CarouselContainer
+  },
+  {
+    path: '/yt/skeleton-loader',
+    name: 'SkeletonLoaderContainer',
+    component: SkeletonLoaderContainer
   },
 
   // VueUse
