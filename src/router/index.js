@@ -12,6 +12,7 @@ import SettingsProvider from '../views/YT/ProvideInject/SettingsProvider'
 import SlotContainer from '../views/YT/Slots/SlotContainer'
 import CarouselContainer from '../views/YT/Carousel/CarouselContainer'
 import SkeletonLoaderContainer from '../views/YT/SkeletonLoader/SkeletonLoaderContainer'
+import DynamicComponentContainer from '../views/YT/DynamicComponent/DynamicComponentContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
@@ -70,6 +71,11 @@ const routes = [
     path: '/yt/skeleton-loader',
     name: 'SkeletonLoaderContainer',
     component: SkeletonLoaderContainer
+  },
+  {
+    path: '/yt/dynamic-components',
+    name: 'DynamicComponentContainer',
+    component: DynamicComponentContainer
   },
 
   // VueUse
