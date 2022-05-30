@@ -13,6 +13,7 @@ import SlotContainer from '../views/YT/Slots/SlotContainer'
 import CarouselContainer from '../views/YT/Carousel/CarouselContainer'
 import SkeletonLoaderContainer from '../views/YT/SkeletonLoader/SkeletonLoaderContainer'
 import DynamicComponentContainer from '../views/YT/DynamicComponent/DynamicComponentContainer'
+import EmitEventContainer from '../views/YT/EmitEvent/EmitEventContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
@@ -76,6 +77,11 @@ const routes = [
     path: '/yt/dynamic-components',
     name: 'DynamicComponentContainer',
     component: DynamicComponentContainer
+  },
+  {
+    path: '/yt/emit-event-modal',
+    name: 'EmitEventContainer',
+    component: EmitEventContainer
   },
 
   // VueUse

@@ -1,0 +1,80 @@
+<template>
+  <div class="modal-container">
+
+    <div id="demo-modal" :class="['modal', { active : props.modalDrawStatus === true  }]">
+        <div class="modal__content">
+            <h1>{{ props.title }}</h1>
+
+            <p>
+                Made with Vue JS 3.0
+            </p>
+
+            <a href="#" @click.prevent="emit('toggleModal')" class="modal__close">&times;</a>
+        </div>
+    </div>
+
+  </div>
+</template>
+
+<script setup>
+import { onMounted, onUpdated } from 'vue';
+const props = defineProps({
+  title: String,
+  modalDrawStatus: Boolean
+})
+
+const emit = defineEmits({
+    toggleModal(){
+        return true
+    }
+})
+onMounted(()=> {
+    console.log(props.modalDrawStatus)
+})
+onUpdated(()=> {
+    console.log(props.modalDrawStatus)
+})
+</script>
+
+<style scoped>
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .4s;
+}
+
+/* .modal:target { */
+  /* visibility: visible; */
+  /* opacity: 1; */
+/* } */
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #585858;
+  text-decoration: none;
+}
+</style>
