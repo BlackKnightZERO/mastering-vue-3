@@ -36,6 +36,15 @@
           </div>
       </div> 
 
+      <div class="dropdown">
+          <button class="dropbtn">Plugins 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <router-link to="/vue-plugins/toast">Toaster</router-link>
+          </div>
+      </div> 
+
   </div>
 </template>
 

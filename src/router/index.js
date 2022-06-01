@@ -14,6 +14,7 @@ import CarouselContainer from '../views/YT/Carousel/CarouselContainer'
 import SkeletonLoaderContainer from '../views/YT/SkeletonLoader/SkeletonLoaderContainer'
 import DynamicComponentContainer from '../views/YT/DynamicComponent/DynamicComponentContainer'
 import EmitEventContainer from '../views/YT/EmitEvent/EmitEventContainer'
+import ToastContainer from '../views/Plugins/Toast/ToastContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
@@ -89,6 +90,13 @@ const routes = [
     path: '/vue-use/list-use-fetch-1',
     name: 'ListUseFetch1',
     component: ListUseFetch1
+  },
+
+  // Plugins
+  {
+    path: '/vue-plugins/toast',
+    name: 'ToastContainer',
+    component: ToastContainer
   },
 ]
 
