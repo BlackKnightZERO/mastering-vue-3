@@ -33,6 +33,7 @@
           </button>
           <div class="dropdown-content">
             <router-link to="/vue-use/list-use-fetch-1">Suspense & UseFetch</router-link>
+            <router-link to="/vue-use/use-fetch-table">UseFetch Table</router-link>
           </div>
       </div> 
 

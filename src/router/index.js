@@ -18,6 +18,7 @@ import ToastContainer from '../views/Plugins/Toast/ToastContainer'
 
 //vueuse
 import ListUseFetch1 from '../views/VueUse/useFetch1/ListUseFetch1'
+import TableUseFetch from '../views/VueUse/useFetch/TableUseFetch'
 
 const routes = [
   {
@@ -90,6 +91,11 @@ const routes = [
     path: '/vue-use/list-use-fetch-1',
     name: 'ListUseFetch1',
     component: ListUseFetch1
+  },
+  {
+    path: '/vue-use/use-fetch-table',
+    name: 'TableUseFetch',
+    component: TableUseFetch
   },
 
   // Plugins
